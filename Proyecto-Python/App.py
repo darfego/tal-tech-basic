@@ -57,9 +57,6 @@ class LoginApp:
                     messagebox.showinfo("Éxito", "Inicio de sesión exitoso")  # Muestra un mensaje de éxito
                     global sesion_iniciada 
                     sesion_iniciada = True  # Marca la sesión como iniciada
-                    self.root.destroy()  # Destruir la ventana raíz
-                    self.root = tk.Tk()  # Crear una nueva ventana raíz
-                    self.root.geometry("1x1")  # Establece el tamaño de la ventana principal a 300x400 píxeles
                     self.menu_principal()  # Llama al método para mostrar el menú principal
                     return  # Sale del método
 
